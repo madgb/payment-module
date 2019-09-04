@@ -1,5 +1,9 @@
-body,html{font-family:'Source Sans Pro',sans-serif;font-size:20px;line-height:1.5em;color:#26292c;box-sizing:border-box}
+*{box-sizing:border-box}
+body,html{font-family:'Source Sans Pro',sans-serif;font-size:20px;line-height:1.5em;color:#26292c}
 .inner-wrapper{max-width:1024px;margin:0 auto;padding-top:4rem}
+@media (max-width:768px){
+.inner-wrapper{padding:4rem 1rem}
+}
 .header .title{text-align:center;font-size:1.5rem}
 .header .toggle-wrapper{font-size:.9rem;color:#d2cdcc;font-weight:700;text-align:center;padding-top:1rem;display:flex;justify-content:center}
 .header .toggle-wrapper .toggle{padding:0 1rem}
@@ -21,6 +25,9 @@ main .features ul li{position:relative;margin-bottom:1rem}
 main .features ul li::before{content:'';display:block;width:7px;height:4px;border-left:2px solid;border-bottom:2px solid;position:absolute;left:-19px;top:7px;transform:skew(-30deg,20deg) rotate(-70deg);color:#cbcccd}
 main .row{display:flex;width:100%;flex-flow:row wrap}
 main .row .col{width:25%;padding:5rem 1rem;flex:1;border-left:1px solid #eee}
+@media (max-width:768px){
+main .row .col{flex:none;width:100%;border-left:none}
+}
 main .row .col header input{position:relative;top:-4px}
 main .row .essential{border-left:none}
 main .row .col.selected{background-color:#ebf2fc;border:1px solid #317ae2}
