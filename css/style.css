@@ -1,6 +1,6 @@
 *{box-sizing:border-box}
 body,html{font-family:'Source Sans Pro',sans-serif;font-size:20px;line-height:1.5em;color:#26292c}
-.inner-wrapper{max-width:1024px;margin:0 auto;padding-top:4rem}
+.inner-wrapper{max-width:1100px;margin:0 auto;padding-top:4rem}
 @media (max-width:768px){
 .inner-wrapper{padding:4rem 1rem}
 }
@@ -10,7 +10,7 @@ body,html{font-family:'Source Sans Pro',sans-serif;font-size:20px;line-height:1.
 .header .toggle-wrapper .logo{margin-left:1rem;border:1px solid #f0f0f0;height:1.7rem;padding:0 .5rem;border-radius:1rem;line-height:1.7rem;position:relative;top:-4px;background:#f9f9f9;font-style:italic;font-size:.8rem}
 .header .toggle-wrapper .green{color:#08a742}
 .header .toggle-wrapper .logo-green{background-color:#e6f6ed;border-color:#d7f0e3}
-.header .notice{background:#f2f7fd;border:1px solid #e3edfb;padding:.5rem 1rem;font-size:.7rem;line-height:1rem;width:86%;margin:1rem auto;font-weight:700}
+.header .notice{background:#f2f7fd;border:1px solid #e3edfb;padding:.5rem 1rem;font-size:.7rem;line-height:1rem;width:83%;margin:1rem auto;font-weight:700}
 main{letter-spacing:-.2px}
 main .form-wrapper{margin-bottom:3rem}
 main header{padding-bottom:1rem}

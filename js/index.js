@@ -40,21 +40,25 @@ radioList.forEach(radio => radio.addEventListener("click", function (e) {
         advanced.classList.remove('selected');
         professional.classList.remove('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = '1px';
     } else if (id === 'monthly-advanced') {
         essential.classList.remove('selected');
         advanced.classList.add('selected');
         professional.classList.remove('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = 0;
     } else if (id === 'monthly-professional') {
         essential.classList.remove('selected');
         advanced.classList.remove('selected');
         professional.classList.add('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = '1px';
     } else {
         essential.classList.remove('selected');
         advanced.classList.remove('selected');
         professional.classList.remove('selected');
         enterprise.classList.add('selected');
+        professional.style.borderWidth = '1px';
     }
 }));
 
@@ -71,20 +75,24 @@ annualRadioList.forEach(radio => radio.addEventListener("click", function (e) {
         advanced.classList.remove('selected');
         professional.classList.remove('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = '1px';
     } else if (id === 'annually-advanced') {
         essential.classList.remove('selected');
         advanced.classList.add('selected');
         professional.classList.remove('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = 0;
     } else if (id === 'annually-professional') {
         essential.classList.remove('selected');
         advanced.classList.remove('selected');
         professional.classList.add('selected');
         enterprise.classList.remove('selected');
+        professional.style.borderWidth = '1px';
     } else {
         essential.classList.remove('selected');
         advanced.classList.remove('selected');
         professional.classList.remove('selected');
         enterprise.classList.add('selected');
+        professional.style.borderWidth = '1px';
     }
 }));
