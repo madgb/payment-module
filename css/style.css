@@ -33,7 +33,7 @@ main .row .col{flex:none;width:100%;border-left:none}
 }
 main .row .col header input{position:relative;top:-4px}
 main .row .col .special-offer{text-transform:uppercase;background-color:#317ae2;color:#fff;font-size:.8rem;top:0;width:100%;left:0;text-align:center}
-main .row .col .special-offer>span::after{content:'TRY FOR 30 DAYS';color:#08a742;position:absolute;width:100%;left:-2.9rem;font-size:.7rem;top:1.7rem;font-weight:900}
+main .row .col .special-offer-content{text-transform:uppercase;color:#08a742;top:1.8rem;font-size:.7rem;font-weight:900;left:1rem}
 main .row .col .contact{bottom:-.5rem}
 main .row .col .contact button{font-weight:900}
 main .row .essential{border-left:none}

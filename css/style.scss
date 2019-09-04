@@ -195,15 +195,14 @@ main {
                 text-align: center;
             }
 
-            .special-offer>span::after {
-                content: 'TRY FOR 30 DAYS';
-                color: #08A742;
-                position: absolute;
-                width: 100%;
-                left: -2.9rem;
+
+            .special-offer-content {
+                text-transform: uppercase;
+                color: #08a742;
+                top: 1.8rem;
                 font-size: 0.7rem;
-                top: 1.7rem;
                 font-weight: 900;
+                left: 1rem;
             }
 
             .contact {
