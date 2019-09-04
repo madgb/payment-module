@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage Subscription</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="inner-wrapper">
+        <header class="header">
+            <div class="title">
+                <h1>Manage Subscription</h1>
+            </div>
+            <div class="toggle-wrapper">
+                <span class="monthly green">Billed monthly</span>
+                <div class="toggle"><input type="checkbox" class="switch"></div>
+                <span class="annually">Billed annually</span>
+                <span class="logo">save 14%</span>
+            </div>
+            <div class="notice">
+                <span>Pipedrive has new plans. You will remain on your current Gold legacy plan, which is the equivalent of the new Advanced plan, and your invoices will not change. However, you can switch to a new plan at any time.</span>
+            </div>
+        </header>
+        <main>
+            <div class="monthly-form-wrapper form-wrapper">
+                <form id="monthly-plan">
+                    <div class="row">
+                        <div class="col essential">
+                            <header class="essential-header">
+                                <div class="input">
+                                    <input type="radio" name="monthly-plans" class="radio" id="monthly-essential">
+                                    <label for="monthly-essential">Essential</label>
+                                </div>
+                                <div class="price">
+                                    <span>$15</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>All the essentials you need to take control of sales</h3>
+                                </div>
+                                <h4>Features come with all plans:</h4>
+                                <ul>
+                                    <li>Custom pipeline and stages</li>
+                                    <li>Custom fields</li>
+                                    <li>Activities and calendar view</li>
+                                    <li>BCC email inbox</li>
+                                    <li>Customizable dashboard</li>
+                                    <li>User and company goal setting</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col advanced">
+                            <header class="advanced-header">
+                                <div class="input">
+                                    <input type="radio" name="monthly-plans" class="radio" id="monthly-advanced">
+                                    <label for="monthly-advanced">Advanced</label>
+                                </div>
+                                <div class="price">
+                                    <span>$29</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Enjoy hassle-free sales with advanced email</h3>
+                                </div>
+                                <h4>Everything In Essential +</h4>
+                                <ul>
+                                    <li>Real-time matching inboxes</li>
+                                    <li>Email open and clicks</li>
+                                    <li>Email and task automation templates</li>
+                                    <li>Custom email and task automation</li>
+                                    <li>Identify important fields</li>
+                                    <li>One-click data enrichment</li>
+                                    <li>Custom user and admin permissions</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col professional">
+                            <header class="professional-header">
+                                <div class="input">
+                                    <input type="radio" name="monthly-plans" class="radio" id="monthly-professional">
+                                    <label for="monthly-professional">Professional</label>
+                                </div>
+                                <div class="price">
+                                    <span>$29</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Everything you need to upscale sales performance</h3>
+                                </div>
+                                <h4>Everything In Advanced +</h4>
+                                <ul>
+                                    <li>Email distribution list</li>
+                                    <li>One-click calls and all tracking</li>
+                                    <li>Unlimited meeting scheduling</li>
+                                    <li>Multiple dashboards</li>
+                                    <li>Revenue forecasting</li>
+                                    <li>Team management tools</li>
+                                    <li>Sales Manager App</li>
+                                    <li>Contact and deal visibility setting</li>
+                                    <li>Custon user, admin, and manager permissions</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col enterprise">
+                            <header class="enterprise-header">
+                                <div class="input">
+                                    <input type="radio" name="monthly-plans" class="radio" id="monthly-enterprise">
+                                    <label for="monthly-enterprise">Enterprise</label>
+                                </div>
+                                <div class="price">
+                                    <span>$99</span>
+                                    <span class="sub">Per seat/month (10+ seats)</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Customize pipedrive to reflect your bussiness goals</h3>
+                                </div>
+                                <h4>Everything In Professional +</h4>
+                                <ul>
+                                    <li>Dedicated account manager</li>
+                                    <li>Managed set-up, and ongoing support</li>
+                                    <li>Extra customization to suit your business</li>
+                                    <li>Enhanced security to protect revenue and data</li>
+                                    <li>Customizable dashboard</li>
+                                    <li>More user permissions to control what users see and do</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="annually-form-wrapper form-wrapper hide">
+                <form id="annually-plan">
+                    <div class="row">
+                        <div class="col essential annual-essential">
+                            <header class="essential-header">
+                                <div class="input">
+                                    <input type="radio" name="annually-plans" class="annual-radio" id="annually-essential">
+                                    <label for="annually-essential">Essential</label>
+                                </div>
+                                <div class="price">
+                                    <span>$12.50</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>All the essentials you need to take control of sales</h3>
+                                </div>
+                                <h4>Features come with all plans:</h4>
+                                <ul>
+                                    <li>Custom pipeline and stages</li>
+                                    <li>Custom fields</li>
+                                    <li>Activities and calendar view</li>
+                                    <li>BCC email inbox</li>
+                                    <li>Customizable dashboard</li>
+                                    <li>User and company goal setting</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col advanced annual-advanced">
+                            <header class="advanced-header">
+                                <div class="input">
+                                    <input type="radio" name="annually-plans" class="annual-radio" id="annually-advanced">
+                                    <label for="annually-advanced">Advanced</label>
+                                </div>
+                                <div class="price">
+                                    <span>$24.90</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Enjoy hassle-free sales with advanced email</h3>
+                                </div>
+                                <h4>Everything In Essential +</h4>
+                                <ul>
+                                    <li>Real-time matching inboxes</li>
+                                    <li>Email open and clicks</li>
+                                    <li>Email and task automation templates</li>
+                                    <li>Custom email and task automation</li>
+                                    <li>Identify important fields</li>
+                                    <li>One-click data enrichment</li>
+                                    <li>Custom user and admin permissions</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col professional annual-professional">
+                            <header class="professional-header">
+                                <div class="input">
+                                    <input type="radio" name="annually-plans" class="annual-radio" id="annually-professional">
+                                    <label for="annually-professional">Professional</label>
+                                </div>
+                                <div class="price">
+                                    <span>$29</span>
+                                    <span class="sub">Per seat/month</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Everything you need to upscale sales performance</h3>
+                                </div>
+                                <h4>Everything In Advanced +</h4>
+                                <ul>
+                                    <li>Email distribution list</li>
+                                    <li>One-click calls and all tracking</li>
+                                    <li>Unlimited meeting scheduling</li>
+                                    <li>Multiple dashboards</li>
+                                    <li>Revenue forecasting</li>
+                                    <li>Team management tools</li>
+                                    <li>Sales Manager App</li>
+                                    <li>Contact and deal visibility setting</li>
+                                    <li>Custon user, admin, and manager permissions</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col enterprise annual-enterprise">
+                            <header class="enterprise-header">
+                                <div class="input">
+                                    <input type="radio" name="annually-plans" class="annual-radio" id="annually-enterprise">
+                                    <label for="annually-enterprise">Enterprise</label>
+                                </div>
+                                <div class="price">
+                                    <span><span class="sub">from </span>$99</span>
+                                    <span class="sub">Per seat/month/billed annually (10+ seats)</span>
+                                </div>
+                            </header>
+                            <section class="features">
+                                <div class="feature-title">
+                                    <h3>Customize pipedrive to reflect your bussiness goals</h3>
+                                </div>
+                                <h4>Everything In Professional +</h4>
+                                <ul>
+                                    <li>Dedicated account manager</li>
+                                    <li>Managed set-up, and ongoing support</li>
+                                    <li>Extra customization to suit your business</li>
+                                    <li>Enhanced security to protect revenue and data</li>
+                                    <li>Customizable dashboard</li>
+                                    <li>More user permissions to control what users see and do</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
