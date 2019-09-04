@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #26292C;
+}
+
+.inner-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    @media(max-width: 768px) {
+        padding: 4rem 1rem;
+    }
+}
+
+.header {
+    .title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .toggle-wrapper {
+        font-size: 0.9rem;
+        color: #d2cdcc;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+
+        .toggle {
+            padding: 0 1rem;
+        }
+
+        .logo {
+            margin-left: 1rem;
+            border: 1px solid #f0f0f0;
+            height: 1.7rem;
+            padding: 0 0.5rem;
+            border-radius: 1rem;
+            line-height: 1.7rem;
+            position: relative;
+            top: -4px;
+            background: #f9f9f9;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+
+        .green {
+            color: #08A742;
+        }
+
+        .logo-green {
+            background-color: #e6f6ed;
+            border-color: #d7f0e3;
+        }
+    }
+
+    .notice {
+        background: #f2f7fd;
+        border: 1px solid #e3edfb;
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        width: 86%;
+        margin: 1rem auto;
+        font-weight: bold;
+    }
+}
+
+main {
+    letter-spacing: -0.2px;
+
+    .form-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    header {
+        padding-bottom: 1rem;
+
+        .input {
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .price {
+            .sub {
+                display: block;
+                font-size: 0.7rem;
+                color: #8a8a8a;
+            }
+
+            &>span>.sub {
+                display: inline;
+            }
+
+            .green {
+                color: #08A742;
+            }
+
+            del {
+                color: #8a8a8a;
+                font-size: 0.7rem;
+                margin-left: 0.4rem;
+            }
+        }
+    }
+
+    .features {
+        font-size: 0.8rem;
+        border-top: 1px solid #c1c1c1;
+        padding-top: 1rem;
+        line-height: 1rem;
+
+        .feature-title {
+            padding-bottom: 1.5rem;
+        }
+
+        h4 {
+            font-weight: bolder;
+            padding-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1rem;
+
+            li {
+                position: relative;
+                margin-bottom: 1rem;
+            }
+
+            li::before {
+                content: '';
+                display: block;
+                width: 7px;
+                height: 4px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                position: absolute;
+                left: -19px;
+                top: 7px;
+                transform: skew(-30deg, 20deg) rotate(-70deg);
+                color: #cbcccd;
+            }
+        }
+    }
+
+    .enterprise {
+        .features {
+            border: none;
+        }
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+
+        .col {
+            width: 25%;
+            padding: 3.7rem 1rem;
+            flex: 1;
+            border-left: 1px solid #eee;
+
+            @media(max-width: 768px) {
+                flex: none;
+                width: 100%;
+                border-left: none;
+            }
+
+            header {
+                input {
+                    position: relative;
+                    top: -4px;
+                }
+            }
+
+            .special-offer {
+                text-transform: uppercase;
+                background-color: #317AE2;
+                color: #fff;
+                font-size: 0.8rem;
+                top: 0;
+                width: 100%;
+                left: 0;
+                text-align: center;
+            }
+
+            .special-offer>span::after {
+                content: 'TRY FOR 30 DAYS';
+                color: #08A742;
+                position: absolute;
+                width: 100%;
+                left: -2.9rem;
+                font-size: 0.7rem;
+                top: 1.7rem;
+                font-weight: 900;
+            }
+
+            .contact {
+                bottom: -0.5rem;
+
+                button {
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .essential {
+            border-left: none;
+        }
+
+        .col.selected {
+            background-color: #ebf2fc;
+            border: 1px solid #317AE2;
+
+            .features {
+                border-color: #317AE2;
+            }
+
+            ul li::before {
+                color: #317AE2;
+            }
+        }
+    }
+
+    .submit-wrapper {
+        text-align: center;
+        margin-top: 1rem;
+
+        button {
+            font-weight: 900;
+        }
+    }
+}
+
+// switch
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .7);
+    transition: background-image .7s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    background: #08A742;
+}
+
+.switch:checked {
+    transition: background-image 1s ease-in-out;
+}
+
+
+.switch:after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transform: translateX(0px);
+    animation: off 0.3s forwards ease;
+}
+
+@keyframes off {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+.switch:checked:after {
+    animation: on 0.3s forwards ease;
+}
+
+@keyframes on {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
