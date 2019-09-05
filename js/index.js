@@ -96,3 +96,9 @@ annualRadioList.forEach(radio => radio.addEventListener("click", function (e) {
         professional.style.borderWidth = '1px';
     }
 }));
+
+const monthlyForm = document.querySelector('#monthly-plan');
+
+monthlyForm.addEventListener("submit", () => {
+    IMP.request_pay();
+});
