@@ -99,7 +99,8 @@ annualRadioList.forEach(radio => radio.addEventListener("click", function (e) {
 
 const monthlyForm = document.querySelector('#monthly-plan');
 
-monthlyForm.addEventListener("submit", () => {
+monthlyForm.addEventListener("submit", (e) => {
+    e.preventDefault();
     IMP.request_pay({
         pg : 'inicis', // version 1.1.0부터 지원.
         pay_method : 'card',
